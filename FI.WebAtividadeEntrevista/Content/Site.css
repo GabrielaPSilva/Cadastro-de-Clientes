@@ -1,0 +1,28 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.alert {
+    padding-left: 30px;
+    margin: 30px;
+    position: fixed;
+    z-index: 9999999;
+    right: 0;
+    top: 0;
+    font-family: Poppins-Regular;
+}
+
+.ajusta-linha {
+    margin: 1px;
+}
+
+.glyphicon:hover {
+    cursor: pointer;
+}

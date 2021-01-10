@@ -1,0 +1,55 @@
+﻿<div class="modal fade" id="modalBeneficiario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">
+                    Beneficiários
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </h3>
+
+            </div>
+            <div class="modal-body">
+                <div class="row ajusta-linha">
+                    <input type="hidden" id="hiddenCodigoEditarBeneficiario" value="" />
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="CPFBeneficiario">CPF:</label>
+                                <input required="required" type="text" class="form-control" id="CPFBeneficiario" name="CPFBeneficiario" placeholder="Ex.: 010.011.111-00 " maxlength="14">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Nome">Nome:</label>
+                                <input required="required" type="text" class="form-control" id="NOMEBeneficiario" name="NOME" placeholder="Ex.: João da Silva" maxlength="255">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="button" id="btnCadastrarBeneficiario" class="btn btn-primary js-cadastrar-beneficiario">Incluir</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <table class="table table-responsive js-tabela-beneficiarios">
+                    <thead>
+                        <tr>
+                            <th>CPF</th>
+                            <th>Nome</th>
+                            <th>Ações</th>
+                        </tr>
+      
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCancelarBeneficiario" class="btn btn-secondary js-cancelar-beneficiario" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
